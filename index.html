@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Lokal -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Icon Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TripWise</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/logo1.png" alt="logo-tripwise" class="image-logo" />
+        <h3 class="title-logo">TripWise</h3>
+      </div>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#our-package">Our Package</a>
+            </li>
+            <li>
+              <a href="#call-action">Call Us</a>
+            </li>
+          </ul>
+          <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="banner-section">
+        <div class="top-banner">
+          <h1>Your Trusted Travel Angent's</h1>
+          <h5>Your happiness is our hapiness</h5>
+        </div>
+        <div class="mid-banner">
+          <div class="content">
+            <div class="carausel owl-carousel owl-theme slideshow-container">
+              <div class="img-card my-slides fade"><img src="/assets/img1.jpg" alt="jepang" /></div>
+              <div class="img-card my-slides fade"><img src="/assets/img2.jpg" alt="jepang" /></div>
+              <div class="img-card my-slides fade"><img src="/assets/img3.jpg" alt="jepang" /></div>
+            </div>
+            <br />
+            <div style="text-align: center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="testimoni">
+              <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+              <div class="profile">
+                <div class="avatar-profile"><i class="fa-regular icon fa-user"></i></div>
+                <div class="info-profile">
+                  <h6>Florence Hughes</h6>
+                  <p>Ibu Rumah Tangga, 28</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-us">
+            <form name="contact-us-form">
+              <h4>Contact Us</h4>
+              <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+              <label for="name" class="name">Your Name: </label>
+              <input
+                id="name"
+                name="name"
+                class="name-input"
+                type="text"
+                placeholder="First and last name"
+              />
+              <label for="email" class="email">Email Address: </label>
+              <input id="email" name="email" type="email" placeholder="example@email.com" />
+              <label for="interested" class="interested">What are you interested in?</label><br />
+              <select id="interested" name="interested">
+                <option value="bali">Bali</option>
+                <option value="jepang">Jepang</option>
+                <option value="disneyland">Disneyland</option>
+              </select>
+              <button type="submit" id="submitButton" class="button-send">SEND</button>
+            </form>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <div class="body-modal">
+                  <p class="name-in-modal">Nama : <span id="name-modal"></span></p>
+                  <p class="email-in-modal">Email : <span id="email-modal"></span></p>
+                  <p class="interested-in-modal">
+                    Interested : <span id="interested-modal"></span>
+                  </p>
+                  <p class="info-modal">Terimakasih :)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-banner">
+          <h6>
+            Use this space to provide users with more information about your offer. Consider it a
+            follow-up to your headline and explain the benefits of your service or product
+          </h6>
+          <div class="more-information">
+            <div class="unit-information">
+              <span>1</span>
+              <p>Your first feature, written in the form of a benefit statement.</p>
+            </div>
+            <div class="unit-information">
+              <span>2</span>
+              <p>Your second feature, written in the form of a benefit statement.</p>
+            </div>
+            <div class="unit-information">
+              <span>3</span>
+              <p>Your third feature, written in the form of a benefit statement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-package" class="our-package-section">
+        <div class="title-package"><h2>Our Package</h2></div>
+        <div class="container-package">
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+            <div class="package">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+            <div class="package">
+              <h4>Japan</h4>
+              <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
+            </div>
+          </div>
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-lightbulb"></i></span>
+            <div class="package">
+              <h4>Singapore</h4>
+              <p>This description supports and extends the bullet point above.</p>
+            </div>
+          </div>
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-star"></i></span>
+            <div class="package">
+              <h4>Bandung</h4>
+              <p>This description supports and extends the bullet point above.</p>
+            </div>
+          </div>
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-star"></i></span>
+            <div class="package">
+              <h4>Surabaya</h4>
+              <p>This description supports and extends the bullet point above.</p>
+            </div>
+          </div>
+          <div class="card-package">
+            <span class="icon"><i class="fa-regular fa-star"></i></span>
+            <div class="package">
+              <h4>Third Feature</h4>
+              <p>This description supports and extends the bullet point above.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="call-action" class="call-action-section">
+        <div class="container">
+          <h3 class="closing-argument">Your Closing Argument Headline</h3>
+          <p>
+            Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis,
+            convallis tincidunt risus. Phasellus fringilla odio vel erat fringilla
+          </p>
+          <button type="button">CALL TO ACTION</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">
+        <img src="./assets/logo1.png" alt="TripWise" class="logo" />
+        <span>TripWise</span>
+      </div>
+      <div class="information1">
+        <span>Terms of Service</span>
+        <span>Privacy Policy</span>
+      </div>
+      <div class="information2">
+        <span>&copy; 2023</span>
+        <span>TripWise</span>
+      </div>
+    </footer>
+
+    <!-- JS Lokal -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
